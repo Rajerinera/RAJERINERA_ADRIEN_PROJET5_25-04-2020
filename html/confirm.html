@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Orinoco New</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/orinoco.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" alt="Orinoco" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/mention.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:adrien.rajerinera@live.fr">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="container_confirm">
+        <div id="container-1">
+            <h1> Le recapitulatif de vos commandes :</h1>
+            <table id="table"></table>
+            <p id="cart_empty">Votre panier est vide</p>
+            <button class="btn btn-danger" id="button_remove"> Vider votre panier </button>
+        </div>
+        <div id="container-2">
+            <section class="formulaire_commande">
+                <h2>Veuillez remplir votre formulaire avant de valider votre commande:</h2>
+                <div class="cadre">
+                    <form method="post" name="formContact" id="envoi">
+                        <div class="form-group">
+                            <label for="nom">
+                                Nom de famille
+                            </label>
+                            <input type="text" id="nom" name="nom" class="form-control" required autofocus
+                                placeholder="Renseignez votre nom de famille" />
+                        </div>
+                        <div class="form-group">
+                            <label for="prenom">
+                                Prénom
+                            </label>
+                            <input type="text" id="prenom" name="prenom" class="form-control" required
+                                placeholder="Renseignez votre prénom" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Adresse email
+                            </label>
+                            <input type="email" id="email" name="email" class="form-control" required
+                                placeholder="Entrez une adresse mail valide" />
+                        </div>
+                        <div class="form-group">
+                            <label for="adresse">
+                                Adresse postale et de facturation
+                            </label>
+                            <input type="text" id="adresse" name="adresse" class="form-control" required
+                                placeholder="Ex: 30 Rue de Massy" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ville">
+                                Ville
+                            </label>
+                            <input type="text" id="ville" name="ville" class="form-control" required
+                                placeholder="Ex: Paris" />
+                        </div>
+                        <button class="btn btn-info" type="submit" name="commander">
+                            Commander votre produit
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../js/confirm.min.js"></script>
+    <script> confirmCommande();</script>
+
+</body>
+
+</html>

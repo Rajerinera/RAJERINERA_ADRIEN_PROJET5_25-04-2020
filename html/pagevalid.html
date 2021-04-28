@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Orinoco New</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/orinoco.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/logo.png" alt="Orinoco" id="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/mention.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:adrien.rajerinera@live.fr">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <main id="confirm_command">
+    <section class="confirmation">
+      <h1>Confirmation de votre commande</h1>
+      <p class="textConfirm">Bonjour <span id="firstName"></span>,</p>
+      <p class="textConfirm">
+        Nous vous remercions pour votre achat. Nous vous tiendrons informés
+        par e-mail lorsque les articles de votre commande auront été
+        expédiés.
+      </p>
+      <p class="textConfirm">
+        Votre N° de commande est :
+      </p>
+      <p id="orderId"></p>
+      <p class="textConfirm">
+        Merci de noter ce numéro et d'en faire référence pour toute
+        communication avec nos services concernant cette commande.
+      </p>
+      <p class="textConfirm"> l'équipe de Camera Orinoco vous remercie</p>
+
+      <p class="textConfirm">Ci-dessous le détail de votre commande :</p>
+    </section>
+    <section class="recapitulatif">
+      <h2>Détail de la commande</h2>
+      <div id="confirmation-recap"></div>
+      <div class="retourAccueil">
+        <a href="../index.html" class="btn btn-primary">Retourner à l'accueil</a>
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="../js/pagevalid.min.js"></script>
+  <script> orderResult();</script>
+  <script>confirmRecap();</script>
+</body>
+
+</html>

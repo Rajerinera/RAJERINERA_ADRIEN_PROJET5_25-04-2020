@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Orinoco New</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/orinoco.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/logo.png" alt="Orinoco" id="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span><span id="index_cart"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/mention.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:adrien.rajerinera@live.fr">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/confirm.html">Mon panier <span id="value_cart"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <h1 class="text-dark pt-4">Cameras Stuff</h1>
+    <div class="border-top border-primary w-25 mx-auto my-3"></div>
+    <p class="lead">Faîtes votre choix parmis nos diverses marques</p>
+  </header>
+
+  <main id="main">
+    <img src="#" alt="Photo" id="imgProduct">
+    <div id="nameProduct"></div>
+    <div id="descriptionProduct"></div>
+    <div id="priceProduct"></div>
+    <div id="select">
+      <select id="selectLenses"></select>
+      <select id="selectQuantite"></select>
+    </div>
+    <button id="panier" class="btn btn-success" type="button"> Selectionner ce produit </button>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="../js/product.min.js"></script>
+
+</body>
+
+</html>
